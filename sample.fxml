@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgba(121, 172, 194, 0.33);" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="370.0" prefWidth="656.0">
+               <top>
+                  <HBox prefHeight="59.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="InfinityQA Software  Version 1.1.9 Beta 2017" wrappingWidth="381.21875">
+                           <HBox.margin>
+                              <Insets left="280.0" right="20.0" top="10.0" />
+                           </HBox.margin></Text>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children></VBox>
    </center>
    <top>
       <MenuBar prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
         <menus>
+            <Menu mnemonicParsing="false" text="InfinityQS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About InfinityQS" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="File">
             <items>
                   <MenuItem mnemonicParsing="false" text="Open" />
