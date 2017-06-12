@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="410.0" maxWidth="325.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="410.0" maxWidth="325.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <Label layoutX="75.0" layoutY="-13.0" prefHeight="403.0" prefWidth="325.0" text="Label" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-13.0" />
       <GridPane layoutX="43.0" layoutY="80.0" prefHeight="200.0" prefWidth="325.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
@@ -44,8 +44,8 @@
             <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="90.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="90.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="90.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="165.0" text="0" GridPane.columnSpan="4" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="90.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="zerobutton" mnemonicParsing="false" onAction="#getZeroButtonValue" prefHeight="120.0" prefWidth="165.0" text="0" GridPane.columnSpan="4" GridPane.rowIndex="4" />
+            <Button fx:id="perionButton" mnemonicParsing="false" onAction="#getPeriodValue" prefHeight="65.0" prefWidth="90.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="90.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
          </children>
       </GridPane>
