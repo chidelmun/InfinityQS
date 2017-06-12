@@ -6,6 +6,7 @@ JC = javac
 
 CLASSES = \
         Controller.java \
+        VersionController.java \
         Main.java 
 
 default: classes

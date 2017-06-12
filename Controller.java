@@ -10,6 +10,10 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 
 
 public class Controller implements Initializable {
@@ -34,9 +38,35 @@ public class Controller implements Initializable {
     @FXML
     private Color x4;
 
+       @FXML
+    private Label messageLabel;
+
+    @FXML
+    private Label detailsLabel;
+
+    @FXML
+    private HBox actionParent;
+
+    @FXML
+    private Button actionButton;
+
+    @FXML
+    private Button cancelButton;
+
+    @FXML
+    private HBox okParent;
+
+    @FXML
+    private Button okButton;
+
+    @FXML
+    private Stage window;
+
+    
+
     @FXML
     void getSoftwareVersion(ActionEvent event) throws Exception {
-    	Stage window = new Stage();
+    	window = new Stage();
     	System.out.println("v1.0.0.9 Beta");
     	Parent root = FXMLLoader.load(getClass().getResource("version.fxml"));
         window.setTitle("InfinityQS v1.0.0.9 Beta");
