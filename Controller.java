@@ -100,6 +100,10 @@ public class Controller implements Initializable {
     	window.show();
     }
 
+    @FXML
+    void handleQuitAction(ActionEvent event) {
+    	System.exit(0);
+    }
 
 
 
