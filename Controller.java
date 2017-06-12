@@ -62,7 +62,10 @@ public class Controller implements Initializable {
     @FXML
     private Stage window;
 
-    
+     @FXML
+    private MenuItem newentry;
+
+
 
     @FXML
     void getSoftwareVersion(ActionEvent event) throws Exception {
@@ -71,6 +74,7 @@ public class Controller implements Initializable {
     	Parent root = FXMLLoader.load(getClass().getResource("version.fxml"));
         window.setTitle("InfinityQS v1.0.0.9 Beta");
         window.setScene(new Scene(root, 502, 135));
+        window.setResizable(false);
         window.show();
     }
 
@@ -84,6 +88,17 @@ public class Controller implements Initializable {
     	System.out.println("Quit Button Clicked");
     }
 
+    @FXML
+    void addNewEmployee(ActionEvent event)  throws Exception{
+    	System.out.println("Adding New Employee..");
+    	System.out.println("Connecting to Database");
+    	Stage window = new Stage();
+    	Parent root = FXMLLoader.load(getClass().getResource("new_entry.fxml"));
+    	window.setTitle("Add New Employee");
+    	window.setResizable(false);
+    	window.setScene(new Scene(root,640,400));
+    	window.show();
+    }
 
 
 

@@ -37,14 +37,17 @@ public class VersionController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         System.out.println("View is now loaded!");
-           
-
     }
 
     @FXML
     void handleCancelAction(ActionEvent event) {
         System.out.println("Handle Cancel Button Action ");
         cancelButton.getScene().getWindow().hide();
+    }
+
+    @FXML
+    void handleOkButton(ActionEvent event) {
+        okButton.getScene().getWindow().hide();
     }
 
 
