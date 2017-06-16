@@ -34,7 +34,7 @@
             <MenuItem mnemonicParsing="false" text="Save As…" />
             <MenuItem mnemonicParsing="false" text="Revert" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem fx:id="usersbtn" mnemonicParsing="false" onAction="#getUsers" text="Preferences…" />
+            <MenuItem fx:id="usersbtn" mnemonicParsing="false" onAction="#getUsers" text="Account Holders" />
             <SeparatorMenuItem mnemonicParsing="false" />
           </items>
         </Menu>
@@ -77,7 +77,7 @@
           <content>
             <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="430.0">
               <children>
-                <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="View" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Main View" textAlignment="CENTER" textFill="$x2" wrapText="false" />
               </children>
             </AnchorPane>
           </content>
