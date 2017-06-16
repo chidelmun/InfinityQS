@@ -28,6 +28,9 @@ public class Controller implements Initializable {
 
 
     @FXML
+    private MenuItem usersbtn;
+
+    @FXML
     private Font x1;
 
     @FXML
@@ -102,7 +105,20 @@ public class Controller implements Initializable {
     @FXML
     void quitApp(ActionEvent event) {
     	System.out.println("Quit Button Clicked");
-    	 Platform.exit();
+    	Platform.exit();
+    }
+
+
+    @FXML
+    void getUsers(ActionEvent event)  throws Exception{
+    	System.out.println("usersbtn Button Clicked");
+    	Stage window = new Stage();
+    	Parent view = FXMLLoader.load(getClass().getResource("users.fxml"));
+    	window.setTitle("Load Users");
+    	window.setResizable(false);
+    	window.setScene(new Scene(view, 640, 400));
+    	window.show();
+
     }
 
 

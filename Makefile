@@ -8,6 +8,7 @@ CLASSES = \
         Controller.java \
         VersionController.java \
         NewEmployee.java \
+        Users.java \
         Main.java 
 
 default: classes
