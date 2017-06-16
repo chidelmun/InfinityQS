@@ -34,4 +34,11 @@ public class Users  implements Initializable{
     }
 
 
+    @FXML
+    void handleItemclick(ActionEvent event) throws Exception {
+    	 System.out.println("clicked on " + userslist.getSelectionModel().getSelectedItem().toString());
+    }
+    
+
+
 }
