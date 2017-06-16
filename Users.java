@@ -15,9 +15,21 @@ public class Users  implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+    	String[] users = {
+    		"Ntabe Junior",
+    		"Um Nyobe",
+    		"Nyah Check",
+    		"Isaac Kamga",
+    		"Acho Arnold",
+    		"Kwibang Jephte",
+    		"Nappy Thiery",
+    		"Fogue Fabrice",
+    		"Nyonse Nyami Billy",
+    		"Otto Akama"
+    	};
         System.out.println("View is now loaded!");
         for (int i=0; i<10 ;i++ ) {
-        	userslist.getItems().add("Dario");	
+        	userslist.getItems().add(users[i]);	
         }
     }
 
