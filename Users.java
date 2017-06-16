@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.event.*;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.sql.*;
 
 public class Users  implements Initializable{
 
@@ -28,9 +29,9 @@ public class Users  implements Initializable{
     		"Otto Akama"
     	};
         System.out.println("View is now loaded!");
-        for (int i=0; i<10 ;i++ ) {
+        for (int i=0; i< users.length;i++ ) {
         	userslist.getItems().add(users[i]);	
-        }
+        } 
     }
 
 
