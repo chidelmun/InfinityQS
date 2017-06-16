@@ -14,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.application.Platform;
 
 
 public class Controller implements Initializable {
@@ -83,10 +84,6 @@ public class Controller implements Initializable {
         System.out.println("View is now loaded!");
     }
 
-    @FXML
-    void quitApplicationAction(ActionEvent event) {
-    	System.out.println("Quit Button Clicked");
-    }
 
     @FXML
     void addNewEmployee(ActionEvent event)  throws Exception{
@@ -100,10 +97,14 @@ public class Controller implements Initializable {
     	window.show();
     }
 
+    
+
     @FXML
-    void handleQuitAction(ActionEvent event) {
-    	System.exit(0);
+    void quitApp(ActionEvent event) {
+    	System.out.println("Quit Button Clicked");
+    	 Platform.exit();
     }
+
 
 
 
