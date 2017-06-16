@@ -51,7 +51,7 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <ListView fx:id="userslist" layoutX="150.0" layoutY="60.0" onMouseClicked="#handleItemclick" prefHeight="200.0" prefWidth="277.0" />
+            <ListView fx:id="userslist" layoutX="150.0" layoutY="60.0" onMouseClicked="#handleItemclick" prefHeight="300.0" prefWidth="377.0" />
       </children>
     </AnchorPane>
   </children>
